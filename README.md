@@ -1,5 +1,6 @@
 <h1>Nifty / BankNifty Options buying algo developed in python using the SuperTrend indicator for the NSE exchange using the Alice Blue broker API</h1><br>
-  
+  <br>Join Telegram channel <a href="https://t.me/rajeshsivadasanalgo">rajeshsivadasanalgo</a> to get live trading performance
+<br>
 <b>Follow the below steps to get the algo up and running:</b>
 1. Copy all the three files in a same folder
 2. Update the user credentials and preferences in the ab_options.ini
@@ -49,6 +50,7 @@ Below are the settings with default values and their descriptions for the .ini f
 <br>nifty_strike_pe_offset = 200  (Strike to be added to ATM Strike price for Nifty Put Options)
 <br>bank_strike_ce_offset = -100  (Strike to be added to ATM Strike price for BankNifty Call Options)
 <br>bank_strike_pe_offset = 100 (Strike to be added to ATM Strike price for BankNifty Put Options)
+<br>tick_processing_sleep_secs = 9 (Wait or sleep time for the main tick processing loop. Can reduce if the processing time alert is displayed.) 
 
 <br>[info]
 <br>olhc_duration = 3 (Candle time interval in minutes e.g 3 for 3min candle. Min recommended is 2)
@@ -69,7 +71,7 @@ Below are the settings with default values and their descriptions for the .ini f
 <br>rsi_sell_param = 75
 <br>enable_nfo = 0
 <br>enable_bank = 0
-<br>file_nifty = ./data/NIFTY_OPT_20220110_153103.csv
+<br>file_nifty = 
 <br>file_bank = 
 <br>no_of_trades_limit = 10
 <br>weekly_expiry_holiday_dates = 2021-08-19,2021-11-04
@@ -80,7 +82,7 @@ Below are the settings with default values and their descriptions for the .ini f
 <br>nifty_trade_start_time = 920
 <br>nifty_trade_end_time = 1440
 <br>nifty_no_trade_zones = [(900,925),(1100,1330)]
-<br>sl_wait_time = 1260 (Seconds till algo needs to wait for the limit order to be completed post which the order would be cancelled. Default is 21 mins/1260 seconds)
+<br>sl_wait_time = 600 (Seconds till algo needs to wait for the limit order to be completed post which the order would be cancelled. Default is 10 mins/600 seconds)
 <br>nifty_limit_price_low = 50
 <br>nifty_limit_price_high = 400
 <br>bank_limit_price_low = 50
